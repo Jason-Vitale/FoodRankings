@@ -1,0 +1,78 @@
+/* Style for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the restaurant list */
+  #restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Style for each restaurant item */
+  .restaurant {
+    width: 300px;
+    height: 300px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .restaurant:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the name of each restaurant */
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style for the location of each restaurant */
+  .location {
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Style for the rating of each restaurant */
+  .rating {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Style for the "best dish" section of each restaurant */
+  .best-dish {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .restaurant.show .best-dish {
+    transform: translateY(0);
+  }
