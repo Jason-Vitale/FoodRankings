@@ -16,6 +16,66 @@ const restaurants = [
         rating: 9.9,
         location: "Islip | NY",
         bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "Melfi's",
+        rating: 9.1,
+        location: "Charleston | SC",
+        bestDish: "Calamari"
+    },
+    {
+        name: "Little Jack's",
+        rating: 6.1,
+        location: "Charleston | SC",
+        bestDish: "Tavern Burger"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
+    },
+    {
+        name: "McDonalds",
+        rating: 9.9,
+        location: "Islip | NY",
+        bestDish: "Everything"
     }
 ]
 
@@ -27,7 +87,7 @@ restaurants.sort((a, b) => b.rating - a.rating);
 const restaurantList = document.getElementById("restaurant-list");
 
 // Loop through each restaurant in the array and create an HTML element to represent it
-restaurants.forEach(restaurant => {
+restaurants.slice(0, 4).forEach(restaurant => {
   // Create a new list item element for the restaurant
   const restaurantItem = document.createElement("li");
 

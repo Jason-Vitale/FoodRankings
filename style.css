@@ -7,21 +7,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:rgba(181, 20, 20, 0.575)
+    background-image: url(food.jpeg);
+    background-color:#cccccc
+
   }
   
   /* Style for the restaurant list */
-  #restaurant-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 0;
-    align-items: center;
-    list-style: none;
-  }
+/* Style for the restaurant list container */
+.restaurant-container {
+  height: 500px; /* adjust as needed */
+  overflow: scroll;
+}
+
+/* Style for the restaurant list */
+#restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
   
   /* Style for each restaurant item */
   .restaurant {
