@@ -59,9 +59,10 @@ restaurants.forEach(restaurant => {
   restaurantItem.appendChild(bestDish);
 
   // Add a click event listener to the restaurant item that toggles the "show" class on the bestDish element
-  restaurantItem.addEventListener("click", () => {
-    bestDish.classList.toggle("show");
-  });
+    restaurantItem.addEventListener("click", () => {
+        restaurantItem.classList.toggle("expanded");
+        restaurantItem.classList.toggle("show");
+    });
 
   // Add the restaurant item to the HTML element that displays the restaurant list
   restaurantList.appendChild(restaurantItem);
