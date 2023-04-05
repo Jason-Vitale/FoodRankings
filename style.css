@@ -26,7 +26,7 @@ body {
   /* Style for each restaurant item */
   .restaurant {
     width: 300px;
-    height: 150px;
+    height: 125px;
     background-color: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -66,6 +66,7 @@ body {
   
   /* Style for the "best dish" section of each restaurant */
   .best-dish {
+    
     font-size: 16px;
     text-align: center;
     margin-top: 10px;
@@ -78,6 +79,7 @@ body {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(100%);
     transition: all 0.2s ease-in-out;
+
   }
   
   .restaurant.show .best-dish {
